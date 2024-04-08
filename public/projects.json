@@ -3,19 +3,25 @@
         "id": 1,
         "title": "Job-portal",
         "link": "https://rafid-al-ahsan-assignment-09.netlify.app/",
-        "img": "https://i.ibb.co/7X8VvnN/Screenshot-2024-04-09-011901.png"
+        "img": "https://i.ibb.co/7X8VvnN/Screenshot-2024-04-09-011901.png",
+        "description": "This is a frontend application where users are able to browse avaiable jobs and select a job. The selected job is stored in the localstorage",
+        "Technologies": "Javascript, Tailwindcss, React.js "
     },
     {
         "id": 2,
         "title": "Chef-recipe",
         "link": "https://rafid-al-ahsan-assignment-10.netlify.app/",
-        "img": "https://i.ibb.co/QnsB14M/chef.png"
+        "img": "https://i.ibb.co/QnsB14M/chef.png",
+        "description": "In this website a user need to login to view details of chef. Once logged in the user is able to view all the receipes of the chef, the indregients used in the the recipie and able to add a recipe to the favourites.",
+        "Technologies": "React, React-bootstrap, React-toast, APIs, Firebase"
     },
     {
         "id": 3,
         "title": "Toy-Store",
         "link": "https://email-password-auth-2-d2bfd.web.app/",
-        "img": "https://i.ibb.co/7pkYg6L/toy.png"
+        "img": "https://i.ibb.co/7pkYg6L/toy.png",
+        "description": "User are able to view all toys avaliable. Once a user it loggedin they can add their own toys , delete them, also edit any neccessary changes. CRUD funtinonlity",
+        "Technologies": "React, MongoDB, Nodejs, Express.js, Tailwindcss, Restful APIs, Firebase"
     }
 ]
 
