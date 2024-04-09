@@ -3,13 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
-    const items = <>
-        <li className='text-white'><a>Home</a></li>
-        <li className='text-white'><a>Projects</a></li>
-        <li className='text-white'><a>About Me</a></li>
-    </>
-
-        const scrollToAbout = () => {
+    const scrollToAbout = () => {
         const aboutSection = document.getElementById('about');
         if (aboutSection) {
             aboutSection.scrollIntoView({ behavior: 'smooth' });
@@ -30,6 +24,12 @@ const Navbar = () => {
         }
     };
 
+    const items = <>
+        <a onClick={scrollToHome} className="btn btn-ghost">Home</a>
+        <a onClick={scrollToProject} className="btn btn-ghost">Projects</a>
+        <a onClick={scrollToAbout} className="btn btn-ghost">About Me</a>
+    </>
+
     return (
         <div className="navbar bg-[#222020]">
             <div className="navbar-start">
@@ -45,9 +45,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <a onClick={scrollToHome} className="btn btn-ghost">Home</a>
-                    <a onClick={scrollToProject} className="btn btn-ghost">Projects</a>
-                    <a onClick={scrollToAbout} className="btn btn-ghost">About Me</a>
+                    {items}
                 </ul>
             </div>
             <div className="navbar-end">
