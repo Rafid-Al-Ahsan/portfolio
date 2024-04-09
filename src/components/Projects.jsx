@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
 
     const [projects, setProjects] = useState([]);
 
-    fetch('projects.json')
+    fetch('http://localhost:5000/projects')
         .then(response => response.json())
         .then(data => setProjects(data))
 
@@ -27,7 +28,7 @@ function Card({ project }) {
                 <p className="font-bold text-2xl italic">{project.title}</p>
                 <p>{project.description}</p>
                 <div className="card-actions justify-start  ">
-                    <button className="btn btn-primary bg-[#7DF9FF] border-0 px-6 mt-5">View Details</button>
+                    <Link to={`projectdetails/${project.id}`} ><button className="btn btn-primary bg-[#7DF9FF] border-0 px-6 mt-5">View Details</button></Link>
                 </div>
             </div>
         </div>

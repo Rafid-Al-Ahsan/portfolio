@@ -25,9 +25,9 @@ const Navbar = () => {
     };
 
     const items = <>
-        <a onClick={scrollToHome} className="btn btn-ghost text-white text-md">Home</a>
-        <a onClick={scrollToProject} className="btn btn-ghost text-white text-md">Projects</a>
-        <a onClick={scrollToAbout} className="btn btn-ghost text-white text-md">About Me</a>
+        <Link onClick={scrollToHome} className="btn btn-ghost text-white text-md" to='/'>Home</Link>
+        <Link onClick={scrollToProject} className="btn btn-ghost text-white text-md" to="/">Projects</Link>
+        <Link onClick={scrollToAbout} className="btn btn-ghost text-white text-md" to="/">About Me</Link>
     </>
 
     return (

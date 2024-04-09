@@ -23,7 +23,6 @@ const Footer = () => {
                                         type="text"
                                         name="firstName"
                                         value=""
-                                        onChange=""
                                         className="mt-1 p-2 w-full border rounded-md"
                                         required
                                     />
@@ -34,7 +33,6 @@ const Footer = () => {
                                         type="text"
                                         name="lastName"
                                         value=""
-                                        onChange=""
                                         className="mt-1 p-2 w-full border rounded-md"
                                         required
                                     />
@@ -46,7 +44,6 @@ const Footer = () => {
                                     type="email"
                                     name="email"
                                     value=""
-                                    onChange=""
                                     className="mt-1 p-2 w-full border rounded-md"
                                     required
                                 />
@@ -57,7 +54,6 @@ const Footer = () => {
                                     type="tel"
                                     name="phoneNumber"
                                     value=""
-                                    onChange=""
                                     className="mt-1 p-2 w-full border rounded-md"
                                     required
                                 />
@@ -67,7 +63,6 @@ const Footer = () => {
                                 <textarea
                                     name="message"
                                     value=""
-                                    onChange=""
                                     className="mt-1 p-2 w-full border rounded-md"
                                     rows="4"
                                     placeholder='message'
