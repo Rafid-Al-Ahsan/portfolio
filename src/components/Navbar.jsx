@@ -4,9 +4,31 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
 
     const items = <>
-            <li className='text-white'><a>Home</a></li>
-            <li className='text-white'><a>Projects</a></li>
+        <li className='text-white'><a>Home</a></li>
+        <li className='text-white'><a>Projects</a></li>
+        <li className='text-white'><a>About Me</a></li>
     </>
+
+        const scrollToAbout = () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToProject = () => {
+        const projectSection = document.getElementById('project');
+        if (projectSection) {
+            projectSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    const scrollToHome = () => {
+        const homeSection = document.getElementById('home');
+        if (homeSection) {
+            homeSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <div className="navbar bg-[#222020]">
@@ -23,7 +45,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    {items}
+                    <a onClick={scrollToHome} className="btn btn-ghost">Home</a>
+                    <a onClick={scrollToProject} className="btn btn-ghost">Projects</a>
+                    <a onClick={scrollToAbout} className="btn btn-ghost">About Me</a>
                 </ul>
             </div>
             <div className="navbar-end">

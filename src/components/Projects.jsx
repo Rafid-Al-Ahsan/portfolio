@@ -9,7 +9,7 @@ const Projects = () => {
         .then(data => setProjects(data))
 
     return (
-        <div>
+        <div id="project">
             <p className='text-3xl text-center my-5 italic font-bold text-white '>Projects</p>
             <div className='flex w-[90%] m-auto gap-20 '>
                 {projects.map(project => <Card key={project.id} project={project}></Card>)}
@@ -21,13 +21,13 @@ const Projects = () => {
 function Card({ project }) {
 
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96  bg-base-700 text-white shadow-xl">
             <figure><img src={project.img} alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">{project.title}</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-body text-center   ">
+                <p className="font-bold text-2xl italic">{project.title}</p>
+                <p>{project.description}</p>
                 <div className="card-actions justify-start  ">
-                    <button className="btn btn-primary px-6">Details</button>
+                    <button className="btn btn-primary bg-[#7DF9FF] border-0 px-6 mt-5">View Details</button>
                 </div>
             </div>
         </div>

@@ -4,6 +4,13 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const Home = () => {
 
+    const scrollToProject = () => {
+        const projectSection = document.getElementById('project');
+        if (projectSection) {
+            projectSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const backgroungImage = {
 
         backgroundPosition: 'center',
@@ -15,13 +22,13 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div id="home">
             <div className='relative flex justify-center items-center h-screen'>
                 <img src={bgImg} style={backgroungImage} alt="" />
                 <div className='text-center absolute'>
                     <p className='font-bold italic text-4xl mb-4 text-white'>Hey there! Welcome to my portfolio website</p>
                     <p className='font-bold italic text-2xl mb-4 text-white'>I am <span className='italic text-[#7DF9FF]'>Rafid,</span> A junior web developer</p>
-                    <button className="btn btn-accent bg-[#7DF9FF]">View Projects <FaArrowDown /></button>
+                    <a onClick={scrollToProject}><button className="btn btn-accent bg-[#7DF9FF]">View Projects <FaArrowDown /></button></a>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div className='w-100 bg-black py-5'>
+        <div className='w-100 bg-bluek py-5'>
 
             <div className='w-5/6 m-auto'>
                 <p className='font-bold text-4xl text-white text-center '>Want to get in touch</p>
